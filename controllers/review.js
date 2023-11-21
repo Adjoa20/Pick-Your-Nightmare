@@ -1,12 +1,17 @@
-
 const express = require('express');
 const router = express.Router();
-const Review = require('../models/reivew.js')
+const Review = require('../models/review.js')
 
 // ROUTES (I.N.D.U.C.E.S)
 
 // INDEX
-router.get('')
+router.get('', (req, res) => {
+    Review.find({}, (error, allReview) =>{
+        res.render('index.ejs', {
+            review: allReview
+        })
+    })
+})
 
 // NEW
 
@@ -19,3 +24,5 @@ router.get('')
 // EDIT 
 
 // SHOW 
+
+module.exports = router
