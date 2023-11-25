@@ -5,6 +5,7 @@ const app = express()
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
 const reviewController = require('./controllers/review')
+const movieController = require('./controllers/movies')
 const MONGOURI = process.env.MONGOURI
 
 // DATABASE CONNECTION 
@@ -17,6 +18,10 @@ mongoose.connection.once('open', ()=> {
 app.use(express.urlencoded({extended:true}))
 app.use(methodOverride('_method'))
 app.use('/review', reviewController)
+app.use('/movies', movieController)
+app.get('/',(req, res) =>{
+    res.render('index.ejs')
+})
 
 // LISTENTING FOR PORT 
 app.listen(3000, ()=> {
