@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title> <%= category=== 'recommended'?'Highly Recommended': category=== 'watch'?'Most Watched':'Enter If You Dare' %></title>
 </head>
 <body>
-    <h1>Preview Your Review</h1>
+    <h1><%= category=== 'recommended'?'Highly Recommended': category=== 'watch'?'Most Watched':'Enter If You Dare' %></h1>
+    <h2>Write Your Review</h2>
+    <form action="/review" method="POST">
+        Name: <input type="text" name="name" /> <br/>
+        Review: <input type="text" name="review" /> <br/>
+        <input type="hidden" name="category" value="<%= category %>" />
+        <input type="submit" name="" value="Submit Review" />
+    </form>
 
     <nav>
-        <a href="/movies">Back to Most Watched</a>
+        <a href="/recommended">Back to Highly Recommended</a>
     </nav>
 </body>
 </html>
