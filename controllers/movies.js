@@ -3,8 +3,6 @@ const router = express.Router();
 const Movie = require("../models/movies.js");
 const Review = require("../models/review.js")
 
-// ROUTES (I.N.D.U.C.E.S)
-
 // INDEX // SHOW - Created a dynamic route, all categories will same show route 
 router.get('/:category', async (req, res) => {
   const category = req.params.category
@@ -16,7 +14,4 @@ router.get('/:category', async (req, res) => {
 })
 
   
-
-  
-
 module.exports = router

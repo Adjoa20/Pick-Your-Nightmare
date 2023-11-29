@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Your Review</title>
 </head>
 <body>
     <h1>Edit Your Review</h1>
 
-    <form action="/movies/<%movie.id%>?_method=PUT">
-        Name: <input type="text" name="name" value=""/> <br/>
-        Review: <input type="text" name="name" value=""/> <br/>
-
+    <form action="/review/<%review.id%>?_method=PUT">
+        Name: <input type="text" name="name" value="<%=review.name%>"/> <br/>
+        Review: <input type="text" name="name" value="<%review.review%>"/> <br/>
+        <input type="submit" name="" value="Submit Changes" />
     </form>
 </body>
 </html>

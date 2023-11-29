@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <%= category=== 'recommended'?'Highly Recommended': category=== 'watch'?'Most Watched':'Enter If You Dare' %></title>
-</head>
-<body>
-    <h1><%= category=== 'recommended'?'Highly Recommended': category=== 'watch'?'Most Watched':'Enter If You Dare' %></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      <%= category=== 'recommended'?'Highly Recommended': category ==='watch'?'Most Watched':'Enter If You Dare' %></title>
+  </head>
+  <body>
+    <h1>
+      <%= category === 'recommended'?'Highly Recommended': category ==='watch'?'Most Watched':'Enter If You Dare' %></h1>
     <h2>Write Your Review</h2>
     <form action="/review" method="POST">
-        Name: <input type="text" name="name" /> <br/>
-        Review: <input type="text" name="review" /> <br/>
-        <input type="hidden" name="category" value="<%= category %>" />
-        <input type="submit" name="" value="Submit Review" />
+      Name: <input type="text" name="name" /> <br />
+      Review: <input type="text" name="review" /> <br />
+      <input type="hidden" name="category" value="<%= category %>" />
+      <input type="submit" name="" value="Submit Review" />
     </form>
 
     <nav>
-        <a href="/recommended">Back to Highly Recommended</a>
+      <a href="/movies/<%= category %>">Back to <%= category === 'recommended' ? 'watch':'dare' %></a>
     </nav>
-</body>
+  </body>
 </html>
