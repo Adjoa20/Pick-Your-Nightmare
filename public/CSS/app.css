@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 
 body{
-    background: url('https://m.media-amazon.com/images/I/61+yi9ULEiL._AC_UF894,1000_QL80_.jpg')
+    background-image: url('https://m.media-amazon.com/images/I/61+yi9ULEiL._AC_UF894,1000_QL80_.jpg');
+    font-family: 'Mountains of Christmas', serif;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+h1{
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 200px;
+    text-align: center;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+form input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form input[type= "submit"]{
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type= "hidden"]{
+    margin-bottom: 10px;
+}
+
