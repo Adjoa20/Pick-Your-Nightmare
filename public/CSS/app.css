@@ -29,7 +29,7 @@ form{
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #f8f8f8;
+    background-color: #ccc;
 }
 
 form input{
@@ -40,7 +40,7 @@ form input{
 
 form input[type= "submit"]{
     background-color: black;
-    color: white;
+    color: #ccc;
     cursor: pointer;
 }
 
@@ -57,10 +57,12 @@ form input[type= "hidden"]{
 
 .movie-container{
     display: flex;
-    justify-content: center-left;
+    justify-content: left;
     align-items: flex-start;
     height: 100vh;
 }
+
+
 
 a.edit-link{
     color: #007bff;
@@ -78,4 +80,44 @@ a.edit-link{
 a.edit-link:hover{
     text-decoration: underline;
     color: #0056b3;
+}
+
+a.menu-link{
+    color: #007bff;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+a.menu-link:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.review{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.review-content{
+    margin-top: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
