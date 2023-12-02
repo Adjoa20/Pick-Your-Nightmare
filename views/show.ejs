@@ -8,21 +8,27 @@
       <%= category=== 'recommended'?'Highly Recommended': category ==='watch'?'Most Watched':'Enter If You Dare' %></title>
   </head>
   <body>
+    <nav>
+        <a href="/" class="menu-link">Back to Main Menu</a>
+      </nav>
     <h1>
       <%= category === 'recommended'?'Highly Recommended': category ==='watch'?'Most Watched':'Enter If You Dare' %></h1>
     <div class="movie-container">
       <% for (let i=0; i < movies.length; i++) {%>
       <img class="movie-image" src="<%= movies[i].image%>" alt="<%= movies[i].name%>">
+      <p>Sok-woo, a father with not much time for his daughter, Soo-ahn, are boarding the KTX, a fast train that shall bring them from Seoul to Busan. But during their journey, the apocalypse begins, and most of the earth's population become flesh craving zombies. While the KTX is shooting towards Busan, the passenger's fight for their families and lives against the zombies - and each other.</p>
       <%}%>
     </div>
 
       <h2>Write Your Review</h2>
     
     <form action="/review" method="POST">
+    <div class="submit">
       Name: <input type="text" name="name" /> <br />
       Review: <input type="text" name="review" /> <br />
       <input type="hidden" name="category" value="<%= category %>" />
       <input type="submit" name="" value="Submit Review" />
+    </div>
     </form>
     
     <% for (let i = 0; i < reviews.length; i++){ %>
@@ -34,13 +40,13 @@
         <nav> 
             <a href="/review/<%=reviews[i].id%>/edit" class="edit-link">Edit</a>
         </nav>
+
         <form action="/review/<%=reviews[i].id%>?_method=DELETE" method="POST">
-            <input type="submit" value="DELETE"/>
+            <input type="submit" value="DELETE" class="delete-button"/>
         </form>
+        
     <% } %>
 
-    <nav>
-      <a href="/" class="menu-link">Back to Main Menu</a>
-    </nav>
+    
   </body>
 </html>

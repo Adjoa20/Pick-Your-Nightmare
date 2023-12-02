@@ -9,7 +9,7 @@
 <body>
     <h1>Edit Your Review</h1>
 
-    <form action="/review/<%=review?.id%>?_method=PUT" method="POST">
+    <form action="/review/<%=review?.id%>?_method=PUT" method="POST" class="edit-form">
         Name: <input type="text" name="name" value="<%=review?.name%>"/> <br/>
         Review: <input type="text" name="review" value="<%=review?.review%>"/> <br/>
         <input type="hidden" name="category" value="<%= review?.category %>" />

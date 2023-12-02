@@ -22,30 +22,65 @@ h1{
 h2{
     font-size: 50px;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
-form{
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #ccc;
+form.edit-form{
+    background-color: #999da0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-form input{
-    width: 100%;
-    padding: 5px;
+form.edit-form input,
+form.edit-form textarea{
     margin-bottom: 10px;
+    padding: 8px;
 }
 
-form input[type= "submit"]{
+form.edit-form input[type="submit"]{
     background-color: black;
-    color: #ccc;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-form input[type= "hidden"]{
-    margin-bottom: 10px;
+form.submit-form{
+    text-align: center;
+    margin: 10px;
+}
+
+.submit{
+    background-color: #999da0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit input[type="text"]
+.submit input[type="submit"]{
+    margin: 5px;
+    padding: 5px;
+}
+
+.submit input[type="submit"]{
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit input[type="submit"]:hover{
+    background-color: #0056b3;
 }
 
 .movie-image{
@@ -62,19 +97,48 @@ form input[type= "hidden"]{
     height: 100vh;
 }
 
+form.delete-form{
+    display: inline;
+}
 
+input.delete-button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Mountains of Christmas', serif;
+    text-decoration: none;
+    font-weight: bold;
+    width: 10%;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+input.delete-button:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.edit-container{
+    align-items: flex-start;
+}
 
 a.edit-link{
     color: #007bff;
     background-color: black;
     color: white;
+    border: none;
+    padding: 5px;
     cursor: pointer;
+    font-family: 'Mountains of Christmas', serif;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 10px;
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
+    width: 10%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    box-sizing: border-box;
 }
 
 a.edit-link:hover{
@@ -101,12 +165,14 @@ a.menu-link:hover{
 }
 
 .review{
-    border: 1px solid #ccc;
-    background-color: #ccc;
+    border: 1px solid #999da0;
+    background-color: #999da0;
     margin-bottom: 5px;
     padding: 5px;
     text-align: center;
     width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name{
