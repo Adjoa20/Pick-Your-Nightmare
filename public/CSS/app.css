@@ -13,8 +13,10 @@ body{
 
 h1{
     font-family: 'Mountains of Christmas', serif;
-    font-size: 200px;
-    text-align: center;
+    font-size: 120px;
+    text-align:center;
+    font: weight 500px;;
+    color: black;
 }
 
 h2{
@@ -32,12 +34,12 @@ form{
 
 form input{
     width: 100%;
-    padding: 8px;
+    padding: 5px;
     margin-bottom: 10px;
 }
 
 form input[type= "submit"]{
-    background-color: #4caf50;
+    background-color: black;
     color: white;
     cursor: pointer;
 }
@@ -46,3 +48,34 @@ form input[type= "hidden"]{
     margin-bottom: 10px;
 }
 
+.movie-image{
+    width: 500px;
+    height: auto;
+    margin: 50px;
+    border: 2px solid #333;
+}
+
+.movie-container{
+    display: flex;
+    justify-content: center-left;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+a.edit-link{
+    color: #007bff;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+a.edit-link:hover{
+    text-decoration: underline;
+    color: #0056b3;
+}
