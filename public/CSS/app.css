@@ -183,3 +183,12 @@ a.menu-link:hover{
     justify-content: center;
     align-items: center;
 }
+
+.summary{
+    border: 1px solid #999da0;
+    background-color: #999da0;
+    font-size: 55px;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
