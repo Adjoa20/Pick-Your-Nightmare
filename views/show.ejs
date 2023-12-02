@@ -16,9 +16,10 @@
     <div class="movie-container">
       <% for (let i=0; i < movies.length; i++) {%>
       <img class="movie-image" src="<%= movies[i].image%>" alt="<%= movies[i].name%>">
-      <p>Sok-woo, a father with not much time for his daughter, Soo-ahn, are boarding the KTX, a fast train that shall bring them from Seoul to Busan. But during their journey, the apocalypse begins, and most of the earth's population become flesh craving zombies. While the KTX is shooting towards Busan, the passenger's fight for their families and lives against the zombies - and each other.</p>
+      <p><%= movies[i].summary %></p>
       <%}%>
     </div>
+    
 
       <h2>Write Your Review</h2>
     
@@ -37,9 +38,11 @@
         <p class="review-content"><%=reviews[i].review%></p> 
         </div>
 
+        <div class="container"></div>
         <nav> 
             <a href="/review/<%=reviews[i].id%>/edit" class="edit-link">Edit</a>
         </nav>
+        </div>
 
         <form action="/review/<%=reviews[i].id%>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE" class="delete-button"/>

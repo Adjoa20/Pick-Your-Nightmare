@@ -98,7 +98,7 @@ form.submit-form{
 }
 
 form.delete-form{
-    display: inline;
+    display: inline-flex;
 }
 
 input.delete-button{
@@ -112,17 +112,13 @@ input.delete-button{
     font-weight: bold;
     width: 10%;
     margin-left: 50%;
-    margin-bottom: 5%;
+    margin-bottom: 100px;
     box-sizing: border-box;
 }
 
 input.delete-button:hover{
     text-decoration: underline;
     color: #0056b3;
-}
-
-.edit-container{
-    align-items: flex-start;
 }
 
 a.edit-link{
@@ -133,12 +129,12 @@ a.edit-link{
     padding: 5px;
     cursor: pointer;
     font-family: 'Mountains of Christmas', serif;
-    text-decoration: none;
     font-weight: bold;
-    width: 10%;
-    margin-left: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     box-sizing: border-box;
+    width: 10%;
+    margin-left: 35%;
+    margin-bottom: 10%;
 }
 
 a.edit-link:hover{
