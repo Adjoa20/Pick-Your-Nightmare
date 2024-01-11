@@ -2,22 +2,23 @@
 
 <!-- DESCRIPTION -->
 **Description:**
+
 As a passionate developer and movie enthusiast, I embarked on the creation of a unique and engaging project focused on horror movie reviews. This project aims to provide users with a curated selection of horror movies categorized into "Most Watched," "Highly Recommended," and the daring "Enter If You Dare."
 
 <!-- CATEGORIES -->
 **Categories:** 
-Most Watched
-Highly Recommended 
-Enter If Your Dare  
+* Most Watched
+* Highly Recommended 
+* Enter If Your Dare  
 
 
 <!-- TECHNOLOGY USED -->
 **Technology:**
-JavaScript
-HTML
-CSS
-EJS (Embedded JavaScript templates)
-MongoDB
+* JavaScript
+* HTML
+* CSS
+* EJS (Embedded JavaScript templates)
+* MongoDB
 
 
 <!-- USER FEATURES -->
@@ -36,6 +37,7 @@ MVP Goals:
 
 <!-- MVP GOALS -->
 **MVP Goals:**
+
 The Minimum Viable Product (MVP) will focus on implementing essential CRUD (Create, Read, Update, Delete) functionality for the website.
 Users can create new reviews, read existing reviews, update their reviews as needed, and delete their reviews if desired.
 
